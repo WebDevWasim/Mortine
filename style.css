@@ -1,0 +1,229 @@
+﻿#body {
+  font-family: sans-serif;
+  background: url("https://s20.postimg.cc/5siw991ml/gradient-2000574.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+i {
+  position: fixed;
+  right: 12px;
+  top: 10px;
+}
+
+.rule {
+  font-size: 15px;
+  font-family: 'Merienda One', cursive;
+  color: red;
+  font-weight: 800;
+}
+
+ul {
+  margin-top: -20px;
+  color: blue;
+  font-family: 'Courgette', cursive;
+  font-size: 15px;
+}
+
+#bar {
+  height: 100px;
+  color: #fff;
+  background-image: linear-gradient(to right, #ff0505, #002aff);
+  border-bottom: solid 5px #e5e3dc;
+}
+
+
+#shape {
+  position: relative;
+  visibility: hidden;
+}
+
+#title {
+  font-weight: 1000;
+  color: #fff;
+  font-size: 2.7em;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+#div1 {
+  padding-left: 25px;
+  font-family: 'Fugaz One', cursive;
+  padding-top: 10px;
+}
+
+#div3 button {
+  width: 90px;
+  color: #fff;
+  font-family: 'Merienda One', cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: .5s;
+  background: linear-gradient(to left, #05af05, #03a0bc);
+  border: solid 2px #fff;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+  margin-left: -4px;
+}
+
+#div3 button:hover {
+  background: linear-gradient(to right, #00c401, #02bfe0);
+}
+
+h2 {
+  font-size: 26px;
+}
+
+#timeLeft {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  padding: 6px 0;
+  text-align: center;
+  background: linear-gradient(to left, #ffaa00, #ff0000);
+  color: #fff;
+  border: solid 3px #fff;
+  border-radius: 50%;
+  font-size: 36px;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: 'Shrikhand', cursive;
+}
+
+
+#finalscore {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  color: blue;
+}
+
+
+
+#replay {
+  float: right;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #fff;
+  transition: .5s;
+  font-weight: 1000;
+  border: solid 3px #ccd1e0;
+  background: linear-gradient(to left, #05af05, #03a0bc);
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+#home {
+  float: left;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: #fff;
+
+  font-weight: 1000;
+  border: solid 3px #ccd1e0;
+  background: linear-gradient(to right, #05af05, #03a0bc);
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+#replay:hover {
+  background: linear-gradient(to right, #05af05, #03a0bc);
+}
+
+#home:hover {
+  background: linear-gradient(to left, #05af05, #03a0bc);
+}
+
+.alive-mosquito {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  animation: mymove 5s linear 0s infinite normal;
+}
+
+@keyframes mymove {
+  from {
+    transform: rotate(0deg) translateX(70px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(70px) rotate(-360deg);
+  }
+}
+
+.dead-mosquito {
+  animation: rotate 0.2s linear 0s infinite normal;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+
+
+
+#footer {
+  font-family: 'Courgette', cursive;
+  border-top: 3px solid #ffb600;
+  border-bottom: 3px solid #ffb600;
+  line-height: 35px;
+  text-align: center;
+  background-color: #fff;
+  color: red;
+  position: fixed;
+  width: 100%;
+  bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #002aff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00afe0;
+}
+
+#resume {
+  font-size: 20px;
+  font-weight: 1000;
+  letter-spacing: 5px;
+  transition: .5s;
+  background: linear-gradient(to left, #ffaa00, #ff0000);
+  border: solid 4px #ccd1e0;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+#resume:hover {
+  background: linear-gradient(to right, #ffaa00, #ff0000);
+}
+
+#timeOut {
+  text-align: center;
+  font-size: 50px;
+  color: red;
+  font-family: 'Black Ops One', cursive;
+}

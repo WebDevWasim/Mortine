@@ -1,0 +1,77 @@
+
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title> Game </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css"> 
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Merienda+One|Rock+Salt" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Fredoka+One" rel="stylesheet">
+</head>
+
+<body>
+		
+  <div id="bar" class="row align-items-center">
+    <div id="div1" class="col-4">
+      <h2 class="text-center">Score: <span id="score">0</span></h2>
+    </div>
+    <div id="div2" class="col-4">
+      <div id="timeLeft"></div>
+    </div>
+    <div id="div3" class="col-4">
+       <button class="btn mb-1 pl-2" id="restart" onclick="restart()"><b>RESTART</b></button> <br>
+         <!-- Trigger the modal with a button -->
+       <button class="btn" onclick="pause()" data-toggle="modal" data-target="#pause"><b>PAUSE</b></button>
+    </div>
+  </div>
+	    
+
+  <!-- Modal -->
+  <div class="modal fade" id="pause" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">       
+        <div class="modal-footer">
+          <button id="resume" onclick="resume()" data-dismiss="modal" class="btn btn-block pt-1">RESUME</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+		<img src="https://pbs.twimg.com/profile_images/3464389984/9b9b820068d8126129597c43f8d4d2b1.gif" alt="face" id="shape" onclick="killMosquito()">
+	   
+	
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				
+				<div class="modal-body">
+				  <h1 id="timeOut">TIME OUT!</h1>
+				  <div id="finalScore"></div>
+				</div>
+				<div class="modal-footer">
+
+      				<button id="home" onclick="home()" class="btn btn-block">HOME</button>
+    			   
+      				<button id="replay" onclick="replay()" class="btn btn-block mb-2">REPLAY</button>
+				  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<script src="external.js"></script>	
+
+
+</body>
+</html>

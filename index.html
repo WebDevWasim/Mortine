@@ -1,0 +1,115 @@
+﻿<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <title> Home </title>
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Merienda+One|Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    #play {
+  font-family: 'Merienda One', cursive;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50px;
+  background: linear-gradient(to right, #00c401 , #02bfe0);
+  border: 3px solid #fff;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 4px 8px 3px 8px;
+  width: 130px;
+  transition: all 0.5s;
+}
+
+#play span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#play span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -2;
+  right: -2px;
+  transition: 0.1s;
+}
+
+#play:hover {
+    background: linear-gradient(to left, #05af05 , #03a0bc);
+}
+
+#play:hover span {
+  padding-right: 25px;
+}
+
+#play:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  </style>
+</head>
+<body>
+
+
+</head>
+
+<body id="body">
+    
+      <i class="fa fa-info-circle" data-toggle="modal" data-target="#info" style="font-size:25px; color:#fff"></i>
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="info" role="dialog">
+    <div class="modal-dialog modal-sm">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          <p class = "rule"=> RULES:  </p>
+    <ul>
+      <li>You have 30 seconds to kill Mosquitos.</li>
+      <li>Tap on Mosquitos to kill.</li>
+      <li>Kill more Mosquitos to score More.</li>      
+    </ul>
+  
+  <p class = "rule"=> ALERT:  </p>
+    <ul>
+      <li>UI is design for mobile version only. </li>
+      <li>It may not work properly on every Browser, recommended to open with Chrome. </li>      
+    </ul>
+  
+  <p class = "rule"=> Developer's Word:  </p>
+    <ul>
+      <li>I will add few more levels & stages to this Game. If anyone interested to work with me can contact at this no +91 7407504418</li
+    </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+    <h1 id="title">MORTEIN</h1>
+
+    <p id="play" onclick="play()"><span><b>PLAY</b></span></p>     
+ 
+   <h4 id="footer" class="text-center"> Developed by: 
+  <a href="https://www.facebook.com/wkhan8016" target="blank">WASIM KHAN </a>  </h4>
+ 
+  
+<script src="external.js"></script> 
+
+</body>
+</html>
